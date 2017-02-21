@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.karthikeyantkr.firebasestart.MainActivity">
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="71dp"
+        android:onClick="loginAction"
+        android:id="@+id/buttonlogin" />
+
+    <Button
+        android:text="SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonlogin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginEnd="55dp"
+        android:id="@+id/buttonSignup"
+        android:onClick="signup"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button_fb"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/google_sign_in_button"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="41dp"
+        android:id="@+id/editTextEmail"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="38dp"
+        android:id="@+id/editTextPassword"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_alignLeft="@+id/editTextEmail"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:hint="password" />
+</RelativeLayout>

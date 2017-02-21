@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FireBaseStart</string>
+    <string name="facebook_app_id">1813838015559837</string>
+
+    <string-array name="a_Categoryspinner">
+
+        <item>Groceries</item>
+
+        <item>Invoice</item>
+
+        <item>Transportation</item>
+        <item>Shopping</item>
+
+        <item>Rent</item>
+
+        <item>Utilities</item>
+
+        <item>Other</item>
+    </string-array>
+</resources>
